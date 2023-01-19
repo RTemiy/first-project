@@ -8,6 +8,8 @@
 .header {
   display: flex;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -26,15 +28,12 @@
 }
 
 .header__title{
-  padding: 0;
-  width: 730px;
+  padding-left: 64px;
+  max-width: 730px;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
   margin: 0;
-  position: relative;
-  left: 64px;
-  align-self: center;
   z-index: 3;
 }
 
@@ -108,6 +107,10 @@
   margin: 0 0 30px 0;
 }
 
+.two-columns__paragraph:last-of-type{
+  margin: 0;
+}
+
 .two-columns__span-accent{
   font-weight: 600;
 }
@@ -150,11 +153,6 @@
   list-style-type: none;
 }
 
-.table__cell_size_small{
-  width: 200px;
-  margin-top: 80px;
-}
-
 .table__heading{
   padding: 0;
   margin: 0 0 20px 0;
@@ -173,11 +171,15 @@
   list-style-type: none;
 }
 
+.table__text:last-of-type {
+  margin: 0;
+}
+
 
 .feynman{
   background-color: #f2f2f2;
   position: relative;
-  min-height: 797px;
+  min-height: 890px;
   z-index: 0;
 }
 
@@ -225,7 +227,6 @@
   position: relative;
   overflow: hidden;
   padding-top: 90px;
-  padding-bottom: 90px;
   background-color: #1f1f1f;
 }
 
@@ -240,16 +241,36 @@
   top: 0;
 }
 
+.section-title_theme_dark{
+  color: white;
+}
+
+.section-subtitle_theme_dark{
+  color: white;
+}
+
+.section-table_theme_dark{
+  margin-bottom: 90px;
+  color: white;
+}
+
+.table__cell_theme_dark{
+  margin-top: 80px;
+  color: white;
+  width: 200px;
+}
+
 .footer{
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 60px 0 40px 0;
   background-color: #1f1f1f;
+  min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
   width: 90%;
 }
 
@@ -267,7 +288,7 @@
 }
 
 .footer__author{
-  padding: 0;
+  padding: 18px 0;
   margin: 0;
   font-size: 18px;
   line-height: 25px;
@@ -297,13 +318,12 @@
   margin: 0;
   color: white;
   text-decoration: none;
-
 }
 
-.column__social-icon{
+.footer__column-link:last-of-type{
+  padding-bottom: 16px;
+}
+
+.footer__social-icon{
   margin-right: 10px;
-}
-
-.section-title_theme_dark{
-  color: white;
 }
