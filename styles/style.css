@@ -142,6 +142,7 @@
   flex-direction: column;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding: 0;
 }
 
 
@@ -175,7 +176,6 @@
   margin: 0;
 }
 
-
 .feynman{
   background-color: #f2f2f2;
   position: relative;
@@ -200,10 +200,13 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+  padding: 0;
   z-index: 3;
 }
 
 .feynman__link{
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 50%;
   right: 48px;
@@ -249,11 +252,6 @@
   color: white;
 }
 
-.section-table_theme_dark{
-  margin-bottom: 90px;
-  color: white;
-}
-
 .table__cell_theme_dark{
   margin-top: 80px;
   color: white;
@@ -265,6 +263,7 @@
   background-color: #1f1f1f;
   min-height: 350px;
   box-sizing: border-box;
+  display: flex;
 }
 
 .footer__columns{
@@ -309,7 +308,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
   list-style-type: none;
 }
 
